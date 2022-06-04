@@ -8,7 +8,8 @@ import os
 import pathlib
 import re
 import sys
-from glob import glob
+
+from sploinkd.utils.time import timed
 
 ACCEPTED_FORMATS = [
     'py',
@@ -99,6 +100,7 @@ def get_args():
                         help="Add this flag to include node_modules in search.")
     return parser.parse_args()
 
+@timed
 def main(args):
     project_dir = args.project
     if args.verbose:

@@ -12,8 +12,9 @@
 import os
 import pathlib
 import sys
-import time
+
 from sploinkd.loc import walk_directories
+from sploinkd.utils.time import timed
 
 EOL_CRLF = b'\r\n'
 EOL_LF   = b'\n'
@@ -128,9 +129,8 @@ def parse_args():
     return args
 
 
+@timed
 def main(args):
-    start = time.time()
-
     if not os.path.exists(args.project):
         print("Invalid project path supplied.")
         sys.exit(1)
@@ -172,11 +172,9 @@ def main(args):
         if not convert_crlf(project_file, args.verbose):
             errors += 1
 
-    now = time.time()
     error_rate = (errors / count) * 100
     print(f"\nProcessed {count} files with {errors} errors. "
           f"(error rate: {error_rate:.2f}%)")
-    print(f"\nProcess completed. Time elapsed: {int(now - start)}s")
 
 
 if __name__ == '__main__':
