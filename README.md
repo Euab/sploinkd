@@ -2,6 +2,8 @@
 A collection of scripts that I use.
 Python <= 3.7 required.
 
+Whenever I need something to be automated by a script I add it here.
+
 ## Installation
 ### UNIX systems
 ```bash
