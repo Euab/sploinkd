@@ -1,5 +1,4 @@
-# SPDX license identifier gpl2-only
-#!/usr/bin/python3
+# SPDX-License-Identifier: mit-only
 #
 # Copyright (C) 2022, Euan Mills.
 # This file is a part of Sploinkd. See the file LICENSE for more information.

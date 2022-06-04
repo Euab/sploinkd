@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+# SPDX-License-Identifier: mit-only
 
 # Copyright (C) 2022, Euan Mills.
 # A simple Python script which recursively walks through the directory specified
