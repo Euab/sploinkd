@@ -13,7 +13,7 @@ pip3 install git+https://github.com/Euab/sploinkd.git#egg=spolinkd
 ```bash
 pip install git+https://github.com/Euab/sploinkd.git#egg=sploinkd
 ```
-There's also an `install.bat` file which you can run instead.
+There's also an `install.bat` file which you can run instead if you are choosing to install from source.
 
 ## Stuff
 ### Line counter
