@@ -100,6 +100,8 @@ def main(args):
     fmt = "🌟 Creating a new C++ application at {} "
     if args.include:
         fmt += "with include template"
+    
+    print(fmt.format(args.project))
 
     to_write = preprocess_template(args.include)
     print("🪄 Sploinking template...")
