@@ -7,7 +7,7 @@ make
 ```
 and
 ```
-./build/myAwesomeApplication
+./bin/myAwesomeApplication
 ```
 
 Navigate to `src/main.cpp` to get started!
