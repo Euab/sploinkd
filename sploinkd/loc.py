@@ -143,7 +143,6 @@ def main(args):
               "consider reporting a bug.")
 
 if __name__ == "__main__":
-    print("LOC Copyright (C) 2022, Euan Mills. All Rights Reserved.\n")
     try:
         sys.exit(main(get_args()))
     except KeyboardInterrupt:

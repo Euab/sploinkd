@@ -34,8 +34,6 @@ python3 -m sploinkd.loc ./myAwesomeProject
 ```
 Output:
 ```
-LOC Copyright (C) 2022, Euan Mills. All Rights Reserved.
-
 Scanning directories...
 Computing line count...
 
@@ -66,7 +64,6 @@ python3 -m spolinkd.le ~/linux -crlf
 ```
 Output:
 ```
-SploinkD LineEnder Copyright (C) 2022, Euan Mills. All rights reserved.
 Discovering files...
 Converting 59811 files...
 

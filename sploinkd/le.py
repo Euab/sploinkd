@@ -178,7 +178,6 @@ def main(args):
 
 
 if __name__ == '__main__':
-    print("SploinkD LineEnder Copyright (C) 2022, Euan Mills. All rights reserved.")
     try:
         sys.exit(main(parse_args()))
     except KeyboardInterrupt:
