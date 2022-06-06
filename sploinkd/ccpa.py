@@ -3,10 +3,8 @@
 import os
 import pathlib
 import sys
-from pprint import pprint
 from copy import deepcopy
 
-from sploinkd.loc import walk_directories
 from sploinkd.utils.time import timed
 from sploinkd.utils.file import get_files
 
@@ -37,6 +35,8 @@ def preprocess_template(using_include=False):
     to_write = []
 
     for template in template_files:
+        if not using_include and 'include' in template:
+            continue
         data = open_file(template)
         template_data.append((template, data))
     
@@ -100,6 +100,7 @@ def main(args):
     fmt = "🌟 Creating a new C++ application at {} "
     if args.include:
         fmt += "with include template"
+    fmt += '\n'
     
     print(fmt.format(args.project))
 
